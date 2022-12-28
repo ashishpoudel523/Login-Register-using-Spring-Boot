@@ -22,6 +22,16 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/demo
 spring.datasource.username=demo
 spring.datasource.password=password
 
+
+OR, if you use MySQL use the followlig:
+
+
+#--------------------- DB Connection ------------------
+spring.datasource.url=jdbc:mysql://localhost:3306/logindb
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=root
+
 #--------------------JPA-ORM Properties-----------------
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
@@ -29,4 +39,11 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 ```
 
-Spring Security *SecurityFilterChain* : [How to Fix WebSecurityConfigurerAdapter Deprecated](https://studygyaan.com/spring-boot/solve-websecurityconfigureradapter-deprecated)
+
+
+
+spring.profiles.active=dev
+
+
+
+Spring Security *SecurityFilterChain* : How to Fix WebSecurityConfigurerAdapter Deprecated studygyaan
